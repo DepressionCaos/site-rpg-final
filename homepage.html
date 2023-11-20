@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href="assets\css\homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header" id="header">
+        <button onclick="togglesidebar()" class="botao-menu" id="botao-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+        <div class="logo">
+            <a href="#">
+                <img src="assets\logo-removebg-preview.png" class="logorpg">
+            </a>
+        </div>
+        <div class="menu" id="menu">
+            <button onclick="togglesidebar()" class="botao-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </button>
+            
+            <a href="login.html">Login</a>
+            <a href="cadastro.html">Cadastre-se</a>
+            <a href="ficha.html">Crie seu personagem</a>
+        </div>
+    </div>
+    <div class="conteudo" id="conteudo">
+        <section class="slideshow">
+            <div class="slidecontent">
+                <input type="radio" name="d&d" id="radio1">
+                <input type="radio" name="d&d" id="radio2">
+                <input type="radio" name="d&d" id="radio3">
+
+                <div class="slide-box primeiro">
+                    <img class="img-desktop" src="assets\D&D.jpg" alt="">
+                    <img class="img-mobile" src="assets\d&d mobile.jpg" alt="">
+                </div>
+
+                <div class="slide-box">
+                    <img class="img-desktop" src="assets\ordem.jpg" alt="">
+                    <img class="img-mobile" src="assets\ordem mobile.jpg" alt="">
+                </div>
+
+                <div class="slide-box">
+                    <img class="img-desktop" src="assets\tormenta.jpg" alt="">
+                    <img class="img-mobile" src="assets\tormenta mobilw.jpg" alt="">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <main class="cards">
+        <section class="cards mestre">
+            <a href="ficha.html">
+                <img src="assets\mestre.png" alt="">
+            </a>
+            <h3>Mestre</h3>
+        </section>
+        <section class="cards player">
+            <a href="ficha.html">
+                <img src="assets\player.png" alt="">
+            </a>
+            <h3>Player</h3>
+        </section>
+
+
+    </main>
+
+
+</body>
+
+<script src="js\homepage.js"></script>
+
+</html>

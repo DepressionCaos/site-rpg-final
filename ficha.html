@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha do Jogador</title>
+    <link rel="stylesheet" href="assets\css\ficha.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <script></script>
+</head>
+
+<body>
+    <div class="header" id="header">
+        <button onclick="togglesidebar()" class="botao-menu" id="botao-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+        <div class="logo">
+            <a href="homepage.html">
+                <img src="assets\logo-removebg-preview.png" class="logorpg">
+            </a>
+        </div>
+        <div class="menu" id="menu">
+            <button onclick="togglesidebar()" class="botao-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </button>
+            
+            <a href="login.html">Login</a>
+            <a href="cadastro.html">Cadastre-se</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="foto">
+            <img src="https://www.seekpng.com/png/detail/1008-10089179_aragorn-drawing-lotr-ranger-wood-elf-ranger-female.png" alt="">
+        </div>
+        <div class="ficha-jogador">
+            <img src="assets\pngkey.com-dungeons-and-dragons-logo-1413415.png" alt="">
+            <h2>Preencha os campos <p></p> para criar seu Personagem</h2>
+            <div class="info-jogador">
+                <div class="nome" id="info-geral">
+                    <label for="Nome">Nome do Personagem</label>
+                    <input type="text" name="Nome" id="nome">
+                    
+                </div>
+                <div class="raca" id="info-geral">
+                    <label for="raca">Raça</label>
+                    <Select>
+                        <option value="elfo">Elfo</option>
+                        <option value="humano">Humano</option>
+                        <option value="anao">Anão</option>
+                    </Select>
+                    
+                </div>
+                
+                <div class="classe" id="info-geral">
+                    <label for="raca">Classe</label>
+                    <select name="" id="">
+                        <option value="guerreiro">Guerreiro</option>
+                        <option value="feiticeiro">Feiticeiro</option>
+                        <option value="ladino">Ladino</option>
+                    </select>
+                    
+                </div>
+            </div>
+            <div class="ficha-status">
+                <div class="hitpoints">
+                    <input type="number" name="" id="" min="8" max="88" class="nivel">
+                    <label for="">Nível</label>
+        
+                    <input type="number" name="" id="" min="8" max="88">
+                    <label for="">Hitpoints</label>
+        
+                    <input type="number" name="" min="8" max="88">
+                    <label for="">Classe de Armadura</label>
+        
+                </div>
+                
+                <div class="habilidades">
+                    <div class="titulo-interface">
+                        <h2>Habilidades e proeficiências</h2>
+                    </div>
+                    <div class="skills">
+                        <div class="forca" id="status-geral">
+                            <h2>Força</h2>
+                            <div class="status-forca">
+                                <input type="number" name="forca" id="forca" min="8" max="15" >
+                                <label for="">Pontos</label>
+                                <input type="number" name="forca" id="forca" min="0" max="30">
+                                <label for="modificador">Modificador</label>
+                            </div>
+                            
+                        </div>
+                        <div class="destreza" id="status-geral">
+                            <h2>Destreza</h2>
+                            <div class="status-destreza">
+                                <input type="number" name="" id="destreza" min="8" max="15">
+                                <label for="">Pontos</label>
+                                <input type="number" name="" id="destreza" min="0" max="30">
+                                <label for="">Modificador</label>
+                            </div>
+                        </div>
+        
+                        <div class="constituicao" id="status-geral">
+                            <h2>Constituição</h2>
+                            <div class="status-constituicao">
+                                <input type="number" name="constituicao" id="constituicao" min="8" max="15">
+                                <label for="">Pontos</label>
+                                <input type="number" name="constituicao" id="constituicao" min="0" max="30">
+                                <label for="">Modificador</label>
+                            </div>
+                        </div>
+        
+                        <div class="inteligencia" id="status-geral">
+                            <h2>Inteligência</h2>
+                            <div class="status-inteligencia" >
+                                <input type="number" name="inteligencia-pontos" id="pontos-inteligencia" min="8" max="15">
+                                <label for="">Pontos</label>
+                                <input type="number" name="inteligencia-modificador" id="modificador-inteligencia" min="0" max="30">
+                                <label for="">Modificador</label>
+                            </div>
+                        </div>
+        
+                        <div class="constituicao" id="status-geral">
+                            <h2>Sabedoria</h2>
+                            <div class="status-sabedoria" >
+                                <input type="number" name="sabedoria-pontos" id="sabedoria-pontos" min="8" max="15">
+                                <label for="">Pontos</label>
+                                <input type="number" name="sabedoria-modificador" id="sabedoria-modificador" min="0" max="30">
+                                <label for="">Modificador</label>
+                            </div>
+                        </div>
+        
+                        <div class="constituicao" id="status-geral">
+                            <h2>Carisma</h2>
+                            <div class="status-sabedoria">
+                                <input type="number" name="carisma-pontos" id="carisma-pontos" min="8" max="15">
+                                <label for="">Pontos</label>
+                                <input type="number" name="carisma-modificador" id="carisma-modificador" min="0" max="30">
+                                <label for="">Modificador</label>
+                            </div>
+                        </div>
+                        <div class="tesouros">
+                            <div class="titulo-interface">
+                                <H2>Moedas</H2>
+                            </div>
+                            <input type="number" min="1" max="99">
+                            <label for="PP">PP</label>
+                            <input type="number" min="1" max="99">
+                            <label for="PP">PO</label>
+                            <input type="number" min="1" max="99">
+                            <label for="PP">PE</label>
+                            <input type="number" min="1" max="99">
+                            <label for="PP">PPR</label>
+                            <input type="number" min="1" max="99">
+                            <label for="PP">PC</label>
+                        </div>
+                    </div>
+        
+                </div>
+        
+                
+                
+               
+                
+            </div>
+        </div>
+
+    </div>
+    
+   
+
+
+   
+</body>
